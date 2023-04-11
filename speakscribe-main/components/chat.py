@@ -9,11 +9,13 @@ from nicegui import ui
 
 from database import handler
 from settings import default_prompt
-from settings import open_ai_api_key
 
 database_handler = handler.Database()
 
-openai.api_key = open_ai_api_key
+import os
+
+
+openai.api_key = os.environ.get('Openai')
 
 
 async def io_bound(callback: Callable, *args: any, **kwargs: any):
