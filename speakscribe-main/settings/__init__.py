@@ -2,7 +2,10 @@
 import toml
 import openai
 
-open_ai_api_key = toml.load('settings.toml')['openai']['api_key']
+import os
+
+
+open_ai_api_key = os.environ.get('Openai')
 default_prompt = toml.load('settings.toml')['openai']['prompt']
 
 openai.api_key = open_ai_api_key
