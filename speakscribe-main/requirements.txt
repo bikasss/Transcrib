@@ -16,7 +16,7 @@ cycler==0.11.0
 dataclasses-json==0.5.7
 fastapi==0.92.0
 fastapi-socketio==0.0.10
-fonttools==4.39.2
+fonttools
 frozenlist==1.3.3
 greenlet==2.0.2
 h11==0.14.0
